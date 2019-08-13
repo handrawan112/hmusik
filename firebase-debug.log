@@ -1,0 +1,61 @@
+[debug] [2019-08-12T19:33:26.582Z] ----------------------------------------------------------------------
+[debug] [2019-08-12T19:33:26.640Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-08-12T19:33:26.643Z] CLI Version:   7.2.2
+[debug] [2019-08-12T19:33:26.644Z] Platform:      linux
+[debug] [2019-08-12T19:33:26.646Z] Node Version:  v10.16.0
+[debug] [2019-08-12T19:33:26.782Z] Time:          Mon Aug 12 2019 19:33:26 GMT+0000 (Coordinated Universal Time)
+[debug] [2019-08-12T19:33:26.783Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-12T19:33:26.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-12T19:33:26.936Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using handrawan-8765c.
+[debug] [2019-08-12T19:35:08.069Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/handrawan-8765c  
+ 
+[debug] [2019-08-12T19:35:11.131Z] <<< HTTP RESPONSE 200
+[info] 
+=== Firestore Setup
+[debug] [2019-08-12T19:35:11.180Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-12T19:35:11.185Z] > authorizing via signed-in user
+[debug] [2019-08-12T19:35:11.191Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/handrawan-8765c  
+ 
+[debug] [2019-08-12T19:35:11.760Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2019-08-12T19:35:44.132Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/handrawan-8765c/releases?pageSize=10&pageToken=  
+ 
+[debug] [2019-08-12T19:35:47.513Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-12T19:35:47.538Z] No rulesets found, using default.
+[debug] [2019-08-12T19:35:48.082Z] Error: EISDIR: illegal operation on a directory, open '/'
+    at Object.openSync (fs.js:443:3)
+    at Object.writeFileSync (fs.js:1194:35)
+    at Config.writeProjectFile (/usr/lib/node_modules/firebase-tools/lib/config.js:179:8)
+    at getRulesFromConsole.then (/usr/lib/node_modules/firebase-tools/lib/init/features/firestore/rules.js:55:31)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
